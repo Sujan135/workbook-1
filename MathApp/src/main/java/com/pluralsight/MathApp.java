@@ -1,7 +1,5 @@
 package com.pluralsight;
 
-import com.sun.source.tree.Scope;
-
 public class MathApp {
 
     public static void main(String[] args) {
@@ -60,7 +58,5 @@ public class MathApp {
 //        Question 7
         double randomValue = Math.random();
         System.out.println("Question 7: A random number between 0 and 1 is " + randomValue);
-
-
     }
 }

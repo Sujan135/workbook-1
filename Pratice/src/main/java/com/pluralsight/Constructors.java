@@ -60,17 +60,28 @@ public class Constructors {
 //        System.out.println(total + myValue);
 
 
-        var thisValue = 7.5f;
-        int v1 = (int)thisValue;
-        System.out.println(v1);
+//        var thisValue = 7.5f;
+//        int v1 = (int)thisValue;
+//        System.out.println(v1);
+//
+//        /*
+//        Conditional assignment
+//         */
+//        int value1 = 7;
+//        int value2 = 5;
+//        int maxValue = value1 > value2 ? value1 : value2;
+//        System.out.println(maxValue);
 
-        /*
-        Conditional assignment
-         */
-        int value1 = 7;
-        int value2 = 5;
-        int maxValue = value1 > value2 ? value1 : value2;
-        System.out.println(maxValue);
+
+        double students = 30.0d , rooms = 4.0d;
+        if(rooms > 1.0d){
+            System.out.println(students);
+            System.out.println(rooms);
+            double avg = students / rooms;
+            System.out.println(avg);
+
+        }
+
 
 
 
