@@ -64,6 +64,14 @@ public class Constructors {
         int v1 = (int)thisValue;
         System.out.println(v1);
 
+        /*
+        Conditional assignment
+         */
+        int value1 = 7;
+        int value2 = 5;
+        int maxValue = value1 > value2 ? value1 : value2;
+        System.out.println(maxValue);
+
 
 
 
