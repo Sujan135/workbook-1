@@ -18,7 +18,7 @@ public class CalcEngine {
                 result = value1 * value2;
                 break;
             case 'd':
-                result = value2 != 0 ? value1 / value2 : 0.0d;git ass -
+                result = value2 != 0 ? value1 / value2 : 0.0d;
                 break;
             default:
                 System.out.println("Invalid opCode:" + opCode);
