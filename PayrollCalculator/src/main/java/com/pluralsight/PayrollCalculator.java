@@ -16,7 +16,16 @@ public class PayrollCalculator {
         System.out.println("Enter your pay rate: ");
         float payRate = scanner.nextFloat();
 
-        float grossPay = hoursWorked * payRate;
+
+        //Overtime
+        float grossPay;
+        if(hoursWorked > 40) {
+            float regularHours = 40;
+            float overtimeHours = hoursWorked - 40;
+            grossPay = (regularHours * payRate) + (overtimeHours * payRate * 1.5f);
+        }else {
+            grossPay = hoursWorked * payRate;
+        }
 
         System.out.println("Employee name: " + name);
         System.out.println("Gross pay: $" + grossPay);
