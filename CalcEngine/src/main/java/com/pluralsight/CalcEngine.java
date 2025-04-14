@@ -26,7 +26,7 @@ public class CalcEngine {
                 break;
         }
         System.out.println(result);
-
+ 
     }
 }
 

@@ -26,12 +26,34 @@ public class BasicCalculator {
         System.out.println("Please select an option : ");
         String option = scanner.next();
 
-        double result = number1 * number2;
+        double result;
 
-
-        System.out.println( (int)number1 + " * " +  (int)number2 + " = " + (int)result);
+        switch (option) {
+            case "A":
+                result = number1 + number2;
+                System.out.println((int)number1 + " + " + (int)number2 + " = " + (int)result);
+                break;
+            case "S":
+                result = number1 - number2;
+                System.out.println((int)number1 + " - " + (int)number2 + " = " + (int)result);
+                break;
+            case "M":
+                result = number1 * number2;
+                System.out.println((int)number1 + " * " + (int)number2 + " = " + (int)result);
+                break;
+            case "D":
+                if (number2 != 0) {
+                    result = number1 / number2;
+                    System.out.println((int)number1 + " / " + (int)number2 + " = " + result);
+                } else {
+                    System.out.println("Cannot divide by zero.");
+                }
+                break;
+            default:
+                System.out.println("Invalid option selected.");
+                break;
+        }
 
         scanner.close();
-
     }
 }
